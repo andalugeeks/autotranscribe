@@ -4,6 +4,9 @@
 
 AutoTranscribe is an AutoHotkey script that transcribes Spanish spelling into Andalusian E.P.A. proposal in real-time. The script is designed to automate the transcription process and improve the efficiency of transcribing text in Andalusian E.P.A. proposal.
 
+![demo](https://user-images.githubusercontent.com/34275535/231208922-76c18dce-8f64-405c-b2a8-a715ed683dfa.gif)
+
+
 ## Usage
 To use AutoTranscribe, simply run the script in AutoHotkey. Once the script is running, it will automatically transliterate any Spanish text that you type into Andalusian E.P.A. proposal in real-time.
 

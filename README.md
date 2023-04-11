@@ -1,5 +1,7 @@
 # AutoTranscribe
+
 ![andalûh2](https://user-images.githubusercontent.com/34275535/231167984-65f9cf1d-6532-4079-aadd-563e2d1f3fe0.png)
+
 AutoTranscribe is an AutoHotkey script that transcribes Spanish spelling into Andalusian E.P.A. proposal in real-time. The script is designed to automate the transcription process and improve the efficiency of transcribing text in Andalusian E.P.A. proposal.
 
 ## Usage

@@ -7,6 +7,11 @@ AutoTranscribe is an AutoHotkey script that transcribes Spanish spelling into An
 ## Usage
 To use AutoTranscribe, simply run the script in AutoHotkey. Once the script is running, it will automatically transliterate any Spanish text that you type into Andalusian E.P.A. proposal in real-time.
 
+### Pause / Resume:
+- `ctrl`+`alt`+`p` will pause / resume the program
+### Transliterate selected text: 
+- `ctrl`+`alt`+`m` will transliterate the selected text.
+
 You can pause or resume the script at any time by pressing Ctrl+Alt+P.
 
 ## Features

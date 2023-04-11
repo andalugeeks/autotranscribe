@@ -16,12 +16,11 @@ Real-time transliteration of Spanish text into Andalusian E.P.A. proposal.
 Pause and resume functionality with Ctrl+Alt+P.
 We plan to add more features in the future to further improve the functionality of the script.
 
-Requirements
+## Requirements
 AutoTranscribe requires AutoHotkey to be installed on your system in order to run. AutoHotkey can be downloaded from the official website: https://www.autohotkey.com
 
-or 
-
-Download the standalone exe file from the lattest relase. https://github.com/andalugeeks/autotranscribe/releases/tag/beta
+But you can also run it as standalone executable:
+Download the exe file from the lattest relase. https://github.com/andalugeeks/autotranscribe/releases/tag/beta
 
 ## Installation
 To install AutoTranscribe, simply download the script from the GitHub repository and run it in AutoHotkey. or download the lattest relase https://github.com/andalugeeks/autotranscribe/releases/tag/beta

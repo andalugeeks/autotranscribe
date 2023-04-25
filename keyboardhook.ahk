@@ -1,4 +1,5 @@
 ﻿#SingleInstance force
+#NoTrayIcon
 DllCall("AllocConsole")
 WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
 spacevar := true

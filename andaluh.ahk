@@ -8,19 +8,27 @@ WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
 ; berçion
 berçion := 0.5
 
+
 ; Eliminâh tôh lô elementô de menú êççîttentê 
+;Menu, Tray, Icon, andaluh.ico 
 Menu, Tray, NoStandard
 Menu, Tray, Add, Ayuda, ShowAyuda
 Menu, Tray, Add, Recargar, ReloadScript
 Menu, Tray, Add, Salir, ExitScript
 ; Definiçión de lâ funçionê que çe ehecutarán ar çelêççionâh cá elemento der menú 
+
+
+
+
+
 ExitScript(){
-    Process, Close, keyboardhook.exe
+	CloseScript("keyboardhook")
 	ExitApp
-Return
+	Return
 }
 ReloadScript(){
-    Run, "%A_ScriptFullPath%"
+	CloseScript("keyboardhook")
+	Run, "%A_ScriptFullPath%"
 Return
 }
 ShowAyuda(){
@@ -210,7 +218,8 @@ Hotstring(trigger, label, mode := 1, clearTrigger := 1, cond := ""){
 	Hotstring("", "", "CALLBACK")
 	return
 }
-
+;Run, keyboardhook.ahk
+Run, keyboardhook.exe
 ; Ehecutâh el interçêttadôh de teclâ
 ;Run, SpaceBarRemap.exe
 
@@ -344,7 +353,9 @@ replace($){
 		if (subs.HasKey(trigger)){
 				; Emô encontrao er balôh en la array, y çûttituimô er dîpparadôh por el reçurtao ôttenío.
 				myValue := subs[trigger]
-				Send, %myValue%{BS}%Clipboard%
+				myValue := StrReplace(myValue, "`r", "", 1) 
+				myValue := StrReplace(myValue, "`n", "", 1)
+				Send, %myValue%%Clipboard%
 				Return
 			}
 		else {
@@ -354,9 +365,9 @@ replace($){
 			exec := shell.Exec(ComSpec " /C " cmd )
 			andaluh := exec.StdOut.ReadAll()
 			my_string := StrReplace(andaluh, "([\t\s\n]+)", "")
-			Send,  %my_string%{BS 2}%Clipboard%
 			ValorLimpio := StrReplace(andaluh, "`r", "", 1) 
 			ValorLimpio := StrReplace(ValorLimpio, "`n", "", 1)
+			Send,  %ValorLimpio%%Clipboard%
 			; Añadimô er balôh a la array çubs pa aumentâh la beloçidá y reduçîh er côtte computaçionâh.
 			subs[trigger] := ValorLimpio . " "
 			; yamamô a la funçion que guarda la trâccrîççion en er fixero subs.txt
@@ -366,6 +377,8 @@ replace($){
 	
 	Return
 }
+
+
 GuardaEnDatabase(trigger, my_string){
 	textToAppend := trigger . "," . my_string
 	ShowNotification(my_string . "!", "Çe a guardao la palabra " . my_string . " en er lemario pa mehorâh la beloçidá.", 2000)
@@ -428,22 +441,21 @@ SplashImageGUI(Picture, X, Y, Duration, Transparent = false){
 	return
 }
 
-Cerrar_app(){
-	; Êttableçe er nombre der scrîtt/ehecutable a terminâh
-	scriptToKill := "SpaceBarRemap.exe"
-
-	; Ôttenêh el ID de proçeço (PID) der scrîtt/ehecutable
-	Process, Exist, %scriptToKill%
-	pid := ErrorLevel
-
-	; Çi er scrîtt/aplicaçion çe êttá ehecutando, finaliçâl-lo
-	if (pid)
+CloseScript(Name)
 	{
-		Process, Close, %pid%
-		MsgBox The script has been terminated.
-	}
+	DetectHiddenWindows On
+	SetTitleMatchMode RegEx
+	IfWinExist, i)%Name%.* ahk_class AutoHotkey
+		{
+		WinClose
+		WinWaitClose, i)%Name%.* ahk_class AutoHotkey, , 2
+		If ErrorLevel
+			return "Unable to close " . Name
+		else
+			return "Closed " . Name
+		}
 	else
-	{
-		MsgBox The script is not currently running.
+		return Name . " not found"
 	}
-}
+
+

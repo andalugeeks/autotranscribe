@@ -92647,3 +92647,12 @@ comernos_,comênnô
 chocolate_,xocolate
 entonces_,entonçê
 disparate_,dîpparate
+hacerlo_,açêl-lo
+vagabundo_,bagabundo
+abanicandome_,abanicandome
+on_,on
+alfombras_,arfombrâ
+compilado_,compilao
+escript_,escript
+maravilla_,marabiya
+script_,scrîtt

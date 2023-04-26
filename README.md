@@ -1,56 +1,107 @@
-# AutoTranscribe
+# AutoTrâccribe
 
-![andalûh2](https://user-images.githubusercontent.com/34275535/231167984-65f9cf1d-6532-4079-aadd-563e2d1f3fe0.png)
+![andalû2](https://user-images.githubusercontent.com/34275535/231167984-65f9cf1d-6532-4079-aadd-563e2d1f3fe0.png)
 
-AutoTranscribe es un script de AutoHotkey que transcribe la ortografía española a la propuesta de E.P.A. andaluza en tiempo real. El script está diseñado para automatizar el proceso de transcripción y mejorar la eficiencia de la transcripción de texto en andaluz E.P.A. propuesta.
+AutoTrâccribe êh un scrîtt de AutoOtkey que trâccribe la ortografía êppañola a la propuêtta de E.P.A. andaluça en tiempo reâh. Er scrîtt êttá diçeñao pa automatiçâh er proçeço de trâccrîççión y mehorâh la efiçiençia de la trâccrîççión de têtto en andalûh E.P.A. propuêtta.
 
 ![demo](https://user-images.githubusercontent.com/34275535/231208922-76c18dce-8f64-405c-b2a8-a715ed683dfa.gif)
 
 
-## Uso
-Para usar AutoTranscribe, simplemente ejecute el script en AutoHotkey. Una vez ejecutado el script, transliterará automáticamente y en tiempo real cualquier texto en español que escriba a la propuesta de E.P.A. andaluz.
+## Uço
+Pa uçâh AutoTrâccribe, çimplemente ehecute er scrîtt en AutoOtkey. Una bêh ehecutao er scrîtt, trâl-literará automáticamente y en tiempo reâh cuarquiêh têtto en êppañôh que êccriba a la propuêtta de E.P.A. andalûh.
 
-### Pausa / Reanudar:
-- `ctrl`+`alt`+`p` pausará / reanudará el programa
-### Transliterar el texto seleccionado: 
-- `ctrl`+`alt`+`m` transliterará el texto seleccionado.
+### Pauça / Reanudâh:
+- `ctrl`+`art`+`p` pauçará / reanudará er programa
+### Trâl-literâh er têtto çelêççionao: 
+- `ctrl`+`art`+`m` trâl-literará er têtto çelêççionao.
 
-Puedes pausar o reanudar el script en cualquier momento pulsando Ctrl+Alt+P.
+Puedê pauçâh o reanudâh er scrîtt en cuarquiêh momento purçando Ctrl+Art+P.
 
-## Funciones
-AutoTranscribe admite actualmente las siguientes funciones:
+## Funçionê
+AutoTrâccribe âmmite âttuarmente lâ çigientê funçionêh:
 
-Transcripción en tiempo real del texto en español a la propuesta de E.P.A. en andaluz.
-Funcionalidad de pausa y reanudación con Ctrl+Alt+P.
-Funcionalidad de Transcripción de texto seleccionado con Ctrl+Alt+P.
-Planeamos añadir más características en el futuro para mejorar aún más la funcionalidad del script.
+Trâccrîççión en tiempo reâh der têtto en êppañôh a la propuêtta de E.P.A. en andalûh.
+Funçionalidá de pauça y reanudaçión con Ctrl+Art+P.
+Funçionalidá de Trâccrîççión de têtto çelêççionao con Ctrl+Art+P.
+Planeamô añadîh mâh carâtterítticâ en er futuro pa mehorâh aún mâh la funçionalidá der scrîtt.
 
-## Funcionamiento
-**Andaluh.ahk / Andaluh.exe :** substitullen las palabras escritas por su equivalente ortografico E.P.A.
-Esre fichero se encarga de la logica de substitucion y el manejo y generacion del lemario usado.
+## Funçionamiento
+**Andaluh.ahk / Andaluh.exe :** çûttituyen lâ palabrâ êccritâ por çu equibalente ortografico E.P.A.
+Êrre fixero çe encarga de la lohica de çûttituçion y er maneho y heneraçion der lemario uçao.
 
-**keyboardhook.ahk / keyboardhook.exe :** Se encarga de la logica para las teclas de caracteres y teclas de fin de palabra, asi como los comandos de pausa/reanudar y de transcripcion del texto seleccionado.
+**keyboardhook.ahk / keyboardhook.exe :** Çe encarga de la lohica pa lâ teclâ de carâtterê y teclâ de fin de palabra, açi como lô comandô de pauça/reanudâh y de trâccrîççion der têtto çelêççionao.
 
-**filehandler.ahk / filehandler.exe :** Se encarga de añadir contenido al lemario para aumentar la velocidad y reducir el coste computacional.
+**filehandler.ahk / filehandler.exe :** Çe encarga de añadîh contenío ar lemario pa aumentâh la beloçidá y reduçîh er côtte computaçionâh.
 
-**Andaluh-cli.exe :** Aplicacion de linea de comandos. Se encarga de transcribir las palabras o el texto.
+**Andaluh-cli.exe :** Aplicaçion de linea de comandô. Çe encarga de trâccribîh lâ palabrâ o er têtto.
 
-**subs.txt :** Lemario de substituciones.
-
-
-## Requisitos
-AutoTranscribe requiere que AutoHotkey esté instalado en su sistema para funcionar. AutoHotkey puede descargarse del sitio web oficial: https://www.autohotkey.com
-
-Pero también puede ejecutarlo como ejecutable independiente:
-Descargue el archivo de instalación del último lanzamiento. https://github.com/andalugeeks/autotranscribe/releases/tag/v0.0.5.0
-También puede ejecutar los ejecutables independientes sin instalación:
-https://github.com/andalugeeks/autotranscribe/tree/main/Compiled y ejecute Andaluh.exe
-Los ejecutables tienen que ser colocados en una carpeta sin espacios en el nombre. como por ejemplo C:\Andaluh o C:\Autotranscribe\andaluh
-
-## Instalación
-Para instalar AutoTranscribe, simplemente descarga los scripts del repositorio GitHub y ejecúta Andaluh.ahk con AutoHotkey. o descarga el [Instalador](https://github.com/andalugeeks/autotranscribe/releases/tag/v0.0.5.0)
-
-## Contribuir
-Agradecemos cualquier contribución a AutoTranscribe. Si tiene alguna sugerencia sobre nuevas funciones o mejoras, no dude en abrir una incidencia o enviar una solicitud de extracción al repositorio de GitHub.
+**subs.txt :** Lemario de çûttituçionê.
 
 
+## Requiçitô
+AutoTrâccribe requiere que AutoOtkey êtté îttalao en çu çîttema pa funçionâh. AutoOtkey puede dêccargarçe der çitio wêh ofiçiâh: https://www.autohotkey.com
+
+Pero también puede ehecutâl-lo como ehecutable independiente:
+Dêccarge el arxibo de îttalaçión del úrtimo lançamiento. https://github.com/andaluheeks/autotrâccribe/releaçêh/tag/v0.0.5.0
+También puede ehecutâh lô ehecutablê independientê çin îttalaçión:
+https://github.com/andaluheeks/autotrâccribe/tree/main/Compilé y ehecute Andaluh.exe
+Lô ehecutablê tienen que çêh colocáô en una carpeta çin êppaçiô en er nombre. como por ehemplo C:\Andalu o C:\Autotrâccribe\andalu
+
+## Îttalaçión
+Pa îttalâh AutoTrâccribe, çimplemente dêccarga lô scrîtts del repoçitorio HitÛH y ehecúta Andaluh.ahk con AutoOtkey. o dêccarga el [Îttaladôh](https://github.com/andaluheeks/autotrâccribe/releaçêh/tag/v0.0.5.0)
+
+## Contribuîh
+Agradeçemô cuarquiêh contribuçión a AutoTrâccribe. Çi tiene arguna çuherençia çobre nuebâ funçionê o mehorâ, no dude en abrîh una inçidençia o embiâh una çoliçitûh de êttrâççión al repoçitorio de HitÛH.# AutoTrâccribe
+
+![andalû2](https://user-images.githubusercontent.com/34275535/231167984-65f9cf1d-6532-4079-aadd-563e2d1f3fe0.png)
+
+AutoTrâccribe êh un scrîtt de AutoOtkey que trâccribe la ortografía êppañola a la propuêtta de E.P.A. andaluça en tiempo reâh. Er scrîtt êttá diçeñao pa automatiçâh er proçeço de trâccrîççión y mehorâh la efiçiençia de la trâccrîççión de têtto en andalûh E.P.A. propuêtta.
+
+![demo](https://user-images.githubusercontent.com/34275535/231208922-76c18dce-8f64-405c-b2a8-a715ed683dfa.gif)
+
+
+## Uço
+Pa uçâh AutoTrâccribe, çimplemente ehecute er scrîtt en AutoOtkey. Una bêh ehecutao er scrîtt, trâl-literará automáticamente y en tiempo reâh cuarquiêh têtto en êppañôh que êccriba a la propuêtta de E.P.A. andalûh.
+
+### Pauça / Reanudâh:
+- `ctrl`+`art`+`p` pauçará / reanudará er programa
+### Trâl-literâh er têtto çelêççionao: 
+- `ctrl`+`art`+`m` trâl-literará er têtto çelêççionao.
+
+Puedê pauçâh o reanudâh er scrîtt en cuarquiêh momento purçando Ctrl+Art+P.
+
+## Funçionê
+AutoTrâccribe âmmite âttuarmente lâ çigientê funçionêh:
+
+Trâccrîççión en tiempo reâh der têtto en êppañôh a la propuêtta de E.P.A. en andalûh.
+Funçionalidá de pauça y reanudaçión con Ctrl+Art+P.
+Funçionalidá de Trâccrîççión de têtto çelêççionao con Ctrl+Art+P.
+Planeamô añadîh mâh carâtterítticâ en er futuro pa mehorâh aún mâh la funçionalidá der scrîtt.
+
+## Funçionamiento
+**Andaluh.ahk / Andaluh.exe :** çûttituyen lâ palabrâ êccritâ por çu equibalente ortografico E.P.A.
+Êrre fixero çe encarga de la lohica de çûttituçion y er maneho y heneraçion der lemario uçao.
+
+**keyboardhook.ahk / keyboardhook.exe :** Çe encarga de la lohica pa lâ teclâ de carâtterê y teclâ de fin de palabra, açi como lô comandô de pauça/reanudâh y de trâccrîççion der têtto çelêççionao.
+
+**filehandler.ahk / filehandler.exe :** Çe encarga de añadîh contenío ar lemario pa aumentâh la beloçidá y reduçîh er côtte computaçionâh.
+
+**Andaluh-cli.exe :** Aplicaçion de linea de comandô. Çe encarga de trâccribîh lâ palabrâ o er têtto.
+
+**subs.txt :** Lemario de çûttituçionê.
+
+
+## Requiçitô
+AutoTrâccribe requiere que AutoOtkey êtté îttalao en çu çîttema pa funçionâh. AutoOtkey puede dêccargarçe der çitio wêh ofiçiâh: https://www.autohotkey.com
+
+Pero también puede ehecutâl-lo como ehecutable independiente:
+Dêccarge el arxibo de îttalaçión del úrtimo lançamiento. https://github.com/andaluheeks/autotrâccribe/releaçêh/tag/v0.0.5.0
+También puede ehecutâh lô ehecutablê independientê çin îttalaçión:
+https://github.com/andaluheeks/autotrâccribe/tree/main/Compilé y ehecute Andaluh.exe
+Lô ehecutablê tienen que çêh colocáô en una carpeta çin êppaçiô en er nombre. como por ehemplo C:\Andalu o C:\Autotrâccribe\andalu
+
+## Îttalaçión
+Pa îttalâh AutoTrâccribe, çimplemente dêccarga lô scrîtts del repoçitorio HitÛH y ehecúta Andaluh.ahk con AutoOtkey. o dêccarga el [Îttaladôh](https://github.com/andaluheeks/autotrâccribe/releaçêh/tag/v0.0.5.0)
+
+## Contribuîh
+Agradeçemô cuarquiêh contribuçión a AutoTrâccribe. Çi tiene arguna çuherençia çobre nuebâ funçionê o mehorâ, no dude en abrîh una inçidençia o embiâh una çoliçitûh de êttrâççión al repoçitorio de HitÛH.

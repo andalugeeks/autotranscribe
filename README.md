@@ -1,5 +1,7 @@
 # AutoTrâccribe
 
+[Andalûh](https://github.com/andalugeeks/autotranscribe/blob/main/README.mdhttps://github.com/andalugeeks/autotranscribe/blob/main/README-ES.md) | [Castellano](https://github.com/andalugeeks/autotranscribe/blob/main/README-ES.mdhttps://github.com/andalugeeks/autotranscribe/blob/main/README-ES.md) | [English](https://github.com/andalugeeks/autotranscribe/blob/main/README-ES.mdhttps://github.com/andalugeeks/autotranscribe/blob/main/README-EN.md)
+
 ![andalû2](https://user-images.githubusercontent.com/34275535/231167984-65f9cf1d-6532-4079-aadd-563e2d1f3fe0.png)
 
 AutoTrâccribe êh un scrîtt de AutoOtkey que trâccribe la ortografía êppañola a la propuêtta de E.P.A. andaluça en tiempo reâh. Er scrîtt êttá diçeñao pa automatiçâh er proçeço de trâccrîççión y mehorâh la efiçiençia de la trâccrîççión de têtto en andalûh E.P.A. propuêtta.

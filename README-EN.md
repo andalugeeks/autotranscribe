@@ -25,9 +25,9 @@ Pause and resume functionality with Ctrl+Alt+P.
 Selected text transcription functionality with Ctrl+Alt+P.
 We plan to add more features in the future to further improve the functionality of the script.
 
-## Functionality
-**Andaluh.ahk / Andaluh.exe :** substitutes written words with their spelling equivalent E.P.A.
-This file takes care of the substitution logic and the handling and generation of the language used.
+## How it works
+**Andaluh.ahk / Andaluh.exe :** substitutes the written words by their spelling equivalent E.P.A.
+This file takes care of the substitution logic and the handling and generation of the used lemmary.
 
 **keyboardhook.ahk / keyboardhook.exe :** Handles the logic for the character keys and end-of-word keys, as well as the pause/resume and transcription commands for the selected text.
 

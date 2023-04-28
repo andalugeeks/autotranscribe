@@ -10,21 +10,19 @@ AutoTrâccribe êh un scrîtt de AutoOtkey que trâccribe la ortografía êppañ
 
 
 ## Uço
-Pa uçâh AutoTrâccribe, çimplemente ehecute er scrîtt en AutoOtkey. Una bêh ehecutao er scrîtt, trâl-literará automáticamente y en tiempo reâh cuarquiêh têtto en êppañôh que êccriba a la propuêtta de E.P.A. andalûh.
+Pa uçâh AutoTrâccribe, çimplemente ehecute er scrîtt en AutoHotkey. Una bêh ehecutao er scrîtt, trâl-literará automáticamente y en tiempo reâh cuarquiêh têtto o palabra en êppañôh que êccriba a la propuêtta de E.P.A. andalûh.
 
 ### Pauça / Reanudâh:
 - `ctrl`+`art`+`p` pauçará / reanudará er programa
 ### Trâl-literâh er têtto çelêççionao: 
 - `ctrl`+`art`+`m` trâl-literará er têtto çelêççionao.
 
-Puedê pauçâh o reanudâh er scrîtt en cuarquiêh momento purçando Ctrl+Art+P.
-
 ## Funçionê
 AutoTrâccribe âmmite âttuarmente lâ çigientê funçionêh:
 
 Trâccrîççión en tiempo reâh der têtto en êppañôh a la propuêtta de E.P.A. en andalûh.
-Funçionalidá de pauça y reanudaçión con Ctrl+Art+P.
-Funçionalidá de Trâccrîççión de têtto çelêççionao con Ctrl+Art+P.
+Funçionalidá de pauça y reanudaçión con `ctrl`+`art`+`P`.
+Funçionalidá de Trâccrîççión de têtto çelêççionao con `ctrl`+`art`+`M`.
 Planeamô añadîh mâh carâtterítticâ en er futuro pa mehorâh aún mâh la funçionalidá der scrîtt.
 
 ## Funçionamiento

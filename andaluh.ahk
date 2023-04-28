@@ -1,4 +1,4 @@
-﻿#Persistent
+#Persistent
 #SingleInstance, Force
 SendMode Input
 SetWorkingDir, %A_ScriptDir%
@@ -218,16 +218,14 @@ Hotstring(trigger, label, mode := 1, clearTrigger := 1, cond := ""){
 	Hotstring("", "", "CALLBACK")
 	return
 }
-;Run, keyboardhook.ahk
-Run, keyboardhook.exe
 ; Ehecutâh el interçêttadôh de teclâ
-;Run, SpaceBarRemap.exe
+Run, keyboardhook.ahk 
+;Run, keyboardhook.exe
 
 ; creamô el hotstring que çe dîpparará cá bêh que detêtte que una palabra termina en gion baho "_" independientemente de la cantidá de carâtterê
 ; una bêh dîpparao, êtta yama a la funçion replace(), la cuâ reemplaça er contenío de la palabra por la trâccrîççión al andalûh E.P.A. 
 Hotstring("\w+_", "replace",3)
 Return
-
 
 replace($){
 	; Palabrâ de âtta 5 letrâ que çe êccriben iguâh en câtteyano que en andalûh
@@ -341,8 +339,20 @@ replace($){
 	
 	word := RegExReplace($.Value(0), "_", "") ; reemplaçamô er gion baho de la palabra êccrita
 	trigger := $.Value(0) ; borcamô er contenío a una bariable pa podêh uçâl-la çin tantâ complicaçionê en la çintâççî.
+	; Comprobamô çi la palabra empieça con mayúccula
+	is_uppercase := false
+	if (SubStr(trigger, 1, 1) ~= "^[A-Z]") {
+		is_uppercase := true
+	} else {
+		is_uppercase := false
+	}
+
 	; comprobamô çi er balôh êççîtte en el array de equibalençiâ
     if (HasVal(equibalenciâ, trigger)){
+			;  aplicando mayúccula
+			if(is_uppercase){
+					word := Chr(Asc(SubStr(word, 1, 1)) - 32) . SubStr(word, 2)
+				}
 			Send, %word%%Clipboard% ; emô encontrao la equibalençia y embiamô er balôh corrêppondiente.
 			Return
 		}
@@ -355,6 +365,10 @@ replace($){
 				myValue := subs[trigger]
 				myValue := StrReplace(myValue, "`r", "", 1) 
 				myValue := StrReplace(myValue, "`n", "", 1)
+				;  aplicando mayúccula
+				if(is_uppercase){
+					myValue := Chr(Asc(SubStr(myValue, 1, 1)) - 32) . SubStr(myValue, 2)
+				}
 				Send, %myValue%%Clipboard%
 				Return
 			}
@@ -367,6 +381,10 @@ replace($){
 			my_string := StrReplace(andaluh, "([\t\s\n]+)", "")
 			ValorLimpio := StrReplace(andaluh, "`r", "", 1) 
 			ValorLimpio := StrReplace(ValorLimpio, "`n", "", 1)
+			;  aplicando mayúccula
+			if(is_uppercase){
+					ValorLimpio := Chr(Asc(SubStr(ValorLimpio, 1, 1)) - 32) . SubStr(ValorLimpio, 2)
+				}
 			Send,  %ValorLimpio%%Clipboard%
 			; Añadimô er balôh a la array çubs pa aumentâh la beloçidá y reduçîh er côtte computaçionâh.
 			subs[trigger] := ValorLimpio . " "
@@ -457,5 +475,3 @@ CloseScript(Name)
 	else
 		return Name . " not found"
 	}
-
-

@@ -6,8 +6,7 @@ DllCall("AllocConsole")
 WinHide % "ahk_id " DllCall("GetConsoleWindow", "ptr")
 
 ; berçion
-berçion := 0.5
-
+berçion := 0.5.1
 
 ; Eliminâh tôh lô elementô de menú êççîttentê 
 ;Menu, Tray, Icon, andaluh.ico 
@@ -16,11 +15,6 @@ Menu, Tray, Add, Ayuda, ShowAyuda
 Menu, Tray, Add, Recargar, ReloadScript
 Menu, Tray, Add, Salir, ExitScript
 ; Definiçión de lâ funçionê que çe ehecutarán ar çelêççionâh cá elemento der menú 
-
-
-
-
-
 ExitScript(){
 	CloseScript("keyboardhook")
 	ExitApp
@@ -32,7 +26,7 @@ ReloadScript(){
 Return
 }
 ShowAyuda(){
-	têhto := "`n`nAndalûh Berçion: 0.5 `nKeyboardhook Berçion: 0.3 `nFilehandler Berçion: 0.2 `n`nCTRL+ALT+P = Âttibâh / pauçâh er trâccrîttôh automatico `n`nCTRL+ALT+M = Trâccrbîh er têtto çelêççionao `n`nÊtto êh un poyêtto de codigo abierto y libre."
+	têhto := "`n`nAndalûh Berçion: 0.5.1 `nKeyboardhook Berçion: 0.3 `nFilehandler Berçion: 0.2 `n`nCTRL+ALT+P = Âttibâh / pauçâh er trâccrîttôh automatico `n`nCTRL+ALT+M = Trâccrbîh er têtto çelêççionao `n`nÊtto êh un poyêtto de codigo abierto y libre."
 	Gui, Add, Picture, x10 y10 w119 h114, andalûh.png
 	Gui, Add, Text, x+10 y10, %têhto%
 	Gui, Add, Button, x130 y180 w120 h30 gOpenWebsite, Biçita Andalûh.es

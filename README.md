@@ -1,6 +1,6 @@
 # AutoTrâccribe
 
-[Andalûh](https://github.com/andalugeeks/autotranscribe/blob/main/README.mdhttps://github.com/andalugeeks/autotranscribe/blob/main/README-ES.md) | [Castellano](https://github.com/andalugeeks/autotranscribe/blob/main/README-ES.mdhttps://github.com/andalugeeks/autotranscribe/blob/main/README-ES.md) | [English](https://github.com/andalugeeks/autotranscribe/blob/main/README-ES.mdhttps://github.com/andalugeeks/autotranscribe/blob/main/README-EN.md)
+[Andalûh](https://github.com/andalugeeks/autotranscribe/blob/main/README.md) | [Castellano](https://github.com/andalugeeks/autotranscribe/blob/main/README-ES.md) | [English](https://github.com/andalugeeks/autotranscribe/blob/main/README-EN.md)
 
 ![andalû2](https://user-images.githubusercontent.com/34275535/231167984-65f9cf1d-6532-4079-aadd-563e2d1f3fe0.png)
 
